@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox spacing="10.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="durokovic.ljetnizadatak.view.main.MainViewController">
+   <children>
+      <Button fx:id="continentBtn" mnemonicParsing="false" onAction="#continentBtnClicked" prefHeight="25.0" prefWidth="653.0" text="Continents">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </Button>
+      <Button fx:id="eventBtn" mnemonicParsing="false" onAction="#eventBtnClicked" prefHeight="25.0" prefWidth="653.0" text="Events">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </Button>
+      <Button fx:id="formatBtn" mnemonicParsing="false" onAction="#formatBtnClicked" prefHeight="25.0" prefWidth="653.0" text="Formats">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </Button>
+      <Button fx:id="roundTypeBtn" mnemonicParsing="false" onAction="#roundTypeBtnClicked" prefHeight="25.0" prefWidth="653.0" text="Round Types">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </Button>
+      <Button fx:id="eraBtn" mnemonicParsing="false" onAction="#eraBtnClicked" prefHeight="25.0" prefWidth="653.0" text="Era">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </Button>
+      <Hyperlink fx:id="codeLink" onMouseClicked="#codeLinkLblClicked" prefHeight="42.0" prefWidth="199.0" text="Link To Code">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+         <font>
+            <Font size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="36.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/git.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </graphic>
+      </Hyperlink>
+   </children>
+   <padding>
+      <Insets bottom="10.0" top="10.0" />
+   </padding>
+</VBox>
